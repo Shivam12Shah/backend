@@ -18,6 +18,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/", indexRouter)
 app.use("/user", userRouter)
 
-app.listen(process.env.PORT, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('Server is running on port 3000')
 })
